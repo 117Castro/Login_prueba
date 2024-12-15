@@ -29,6 +29,7 @@ button{
     width: 440px;
     color: white;
     font-size: 22px;
+    cursor: pointer;
 }
 
 .contenedor{
