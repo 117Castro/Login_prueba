@@ -32,6 +32,7 @@ button{
 
     background-color: #e6ede7;
     
+    
     /* cajas flex */
     display: flex;
     flex-direction: column;
@@ -40,6 +41,10 @@ button{
     gap: 10px;
 
    
+}
+
+#gh{
+    color: black;
 }
 
 .content{

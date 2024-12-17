@@ -19,7 +19,7 @@
             
             <input type="email" placeholder="username" name="correo" id="user_correo">
             <input type="password" placeholder="password" name="clave" id="password">
-            <button type="button" onclick="loguear()">LOGIN</button>
+            <button id="btnlogin" type="button" onclick="loguear()">LOGIN</button>
 
             <div>
                 <label for="">Not registered?</label>
@@ -27,7 +27,23 @@
             </div>
         </div>
 
+
+
+        
+        <dialog id="modal">
+            <h1>Advertencia de seguridad </h1>
+            <p>Usuario o contraseña incorrecta.</p>
+            <button id="cerrar_modal" type="reset" onclick="closemodal()">Cerrar</button>
+        </dialog>
+
     </div>
+
+
+    
+
+
+
+      
                        
 
 
