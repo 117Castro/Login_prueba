@@ -42,6 +42,10 @@ function closemodal(){
     cancelButton.addEventListener("click", function () {
       modal.close();
     });
+
+
+    localStorage.clear();
+
 }
 
 
