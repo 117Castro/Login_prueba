@@ -60,13 +60,3 @@ function closemodal(){
 
 }
 
-
-
-
-
-
-
-
-
-
-
