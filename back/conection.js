@@ -40,7 +40,7 @@ function closer(){
 
 //     entermodal.addEventListener("click", function(){
 //         modal.showModal();
-//     })
+//     });
 // }
 
 
