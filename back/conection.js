@@ -67,8 +67,7 @@ function loguear(){
     } else {
         data_pwd_error();
       
-       // openmodal();  esta funcion crea redundancia en los eventos asignados al boton de login.
-       //colocamos directamente la funcion para evitar el doble click en 
+       
     
     
     
@@ -105,6 +104,9 @@ function data_user_error(){
 function closemodal(){
     modal.close();
 
+
+
+ 
 //esta funcion crea redundancia del mismo modo que asignandole un segundo evento al boton de cierre en el modal. 
     // let cancelButton= document.getElementById("cerrar_modal");
 
