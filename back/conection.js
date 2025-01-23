@@ -43,12 +43,13 @@ function loguear(){
      * para la validacion de otros usuarios solo debo agregar otos OR y las respectivas
      * ubicaciones.
      */
-    let data_usuarios = [["user@gmail.com", "#Somosdev"], ["prueba@gmail.com", 1234]];
+    let data_usuarios = [["user@gmail.com", "#Somosdev"], ["prueba@gmail.com", "q1234"]];
     
     let usuario = document.getElementById("user_correo").value;
     let contra = document.getElementById("password").value;
     
-    if (usuario=== data_usuarios[0][0] && contra === data_usuarios[0][1]){
+    if ((usuario=== data_usuarios[0][0] && contra === data_usuarios[0][1])||
+        (usuario=== data_usuarios[1][0] && contra === data_usuarios[1][1])){
         window.location="Page_aterrisage.html";
         localStorage.setItem( "usuario", usuario );
     } else {
