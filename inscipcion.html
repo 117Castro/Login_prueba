@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripciones</title>
+    <link rel="stylesheet" href="./Estilo/inscribir.css">
+    <link rel="stylesheet" href="./Estilo/modal.css">
+    <link rel="website icon" type="png" href="./Iconos/Screenshot 2024-12-14 213232.png">
+</head>
+<body>
+    
+<div class="container">
+
+    <div class="contenedor">
+            
+        <label class="titulo1" for="">Inscripciones</label>
+        <input type="text" placeholder="Nombre" name="Nombre" id="user_name">
+        <input type="number" placeholder="Edad" name="Edad" id="user_age">
+        <input type="email" placeholder="Email" name="correo" id="user_correo">
+        <input type="text" placeholder="password" name="clave" id="password">
+        <button id="InscribirUser" type="button" onclick="continuarLogin()">Continuar</button>
+        <button class="btn_atras" id="retroceder" type="button" onclick="retrocederLogin()" >Atras</button>
+        
+        <!-- <div>
+            <label for="">Not registered?</label>
+            <a class="enlace" href="">Created an account</a>
+        </div> -->
+    </div>
+
+    <dialog id="modal">
+        <h1>Advertencia de seguridad </h1>
+        <p id="mensajeError">Usuario o contraseña incorrecta.</p>
+        <button id="cerrar_modal" type="reset" onclick="closemodal()">Cerrar</button>
+    </dialog>
+
+
+</div>
+
+
+<script src="./Back/inscribir.js"></script>
+
+</body>
+</html>
