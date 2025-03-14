@@ -25,7 +25,7 @@ function contraceñaUsuario (event){
     
     if (event.keyCode == 13) {
         document.getElementById("password").focus();
-        continuarLogin();
+        
       
        
     }
