@@ -25,6 +25,21 @@ function contraceñaUsuario (event){
     
     if (event.keyCode == 13) {
         document.getElementById("password").focus();
+        continuarLogin();
+      
+       
+    }
+}
+
+
+
+//me permite acceder a la funcion de inscribir al dar enter cuando se llena el apartado de contraceña.
+document.getElementById("password").addEventListener("keypress", InputUsuario);
+
+function InputUsuario (event){
+    
+    if (event.keyCode == 13) {
+        continuarLogin();
       
        
     }
