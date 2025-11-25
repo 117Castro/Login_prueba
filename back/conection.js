@@ -35,48 +35,50 @@ function enfocar_btnLogin(event){
 
 }
 
-
-//Funcion destinada a la comparativa de los usuarios y contraceñas.
-function loguear(){
+// -------------------------------------------------------------------------------------
+//Funcion destinada a la comparativa de los usuarios y contraceñas. Con datos quemados. 
+// function loguear(){
     
-    let data_usuarios = [["user@gmail.com", "#Somosdev"], ["prueba@gmail.com", "q1234"]];
+//     let data_usuarios = [["user@gmail.com", "#Somosdev"], ["prueba@gmail.com", "q1234"]];
     
-    /**Se introdujo un arreglo para facilitar la introduccion de datos quemados,
-     * para la validacion de otros usuarios solo debo agregar otos OR y las respectivas
-     * ubicaciones.
-     */
+//     /**Se introdujo un arreglo para facilitar la introduccion de datos quemados,
+//      * para la validacion de otros usuarios solo debo agregar otos OR y las respectivas
+//      * ubicaciones.
+//      */
     
-    let usuario = document.getElementById("user_correo").value;
-    let contra = document.getElementById("password").value;
+//     let usuario = document.getElementById("user_correo").value;
+//     let contra = document.getElementById("password").value;
     
-    if ((usuario === data_usuarios[1][0])){
+//     if ((usuario === data_usuarios[1][0])){
         
-        if ((contra === data_usuarios[1][1])){
+//         if ((contra === data_usuarios[1][1])){
 
-                window.location="Page_aterrisage.html";
-                localStorage.setItem( "usuario", usuario );
-        } else {
-            data_pwd_error();
-        } 
+//                 window.location="Page_aterrisage.html";
+//                 localStorage.setItem( "usuario", usuario );
+//         } else {
+//             data_pwd_error();
+//         } 
 
-    } else if ((usuario !== data_usuarios[1][0])) {
+//     } else if ((usuario !== data_usuarios[1][0])) {
 
-        data_user_error();
+//         data_user_error();
 
         
-    } else {
-        data_pwd_error();
+//     } else {
+//         data_pwd_error();
       
        
     
     
     
-    }
+//     }
     
-    //almacena la informacion 
+//     //almacena la informacion 
 
    
-}
+// }
+// -------------------------------------------------------------------------------------
+
 
 function data_pwd_error(){
 
@@ -96,6 +98,14 @@ function data_user_error(){
     modal.showModal();
 }
 
+
+function error_usuario(){
+
+    document.getElementById("mensajeError").textContent = "Su correo o contraceña es incorrecta";
+    document.getElementById("password").value = "";
+    document.getElementById("user_correo").focus();
+    modal.showModal();
+}
 
 
 

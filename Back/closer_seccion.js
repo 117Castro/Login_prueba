@@ -6,6 +6,8 @@ document.getElementById("btn_closer").focus();
 function closer(){
     window.location = "login.html";
     localStorage.clear();
+    //localStorage.removeItem("usuario");//unicamente borra el item de usuario sin tocar algo mas.
+
 }
 
 

@@ -1,11 +1,170 @@
-body{
+/* css de nav superior en el menu */
 
-    height: 100vh;
-    margin: 0;
+/* menu superior de navegacion*/
+
+.navbar {
+
+  
+  position: sticky;
+  width: auto;
+  top: 0;
+  z-index: 10;
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  font-family: 'Roboto', sans-serif;
+}
+
+.nav-left .logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #6ccb75;
+}
+
+
+
+
+
+.nav-center a {
+
+  margin: 0 12px;
+  text-decoration: none;
+  color: #1c1e21;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background 0.2s;
+
+}
+
+.nav-center a:hover {
+  background-color: #f0f2f5;
+}
+
+.nav-right input {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-center a {
+    margin: 0 6px;
+    font-size: 0.9rem;
+  }
+
+  .nav-right input {
+    width: 100px;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav-center {
+    display: none;
+  }
+
+  .nav-right input {
+    width: 80px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    
+  }
+}
+/* -------------------------------------- */
+/* estilo de menu lateral izquierdo */
+
+.navbarIzquierdo{
+  
+
+  position: sticky;
+
+  height: 100vh;
+  max-width: 15%;
+  top: 0;
+  z-index: 10;
+  background-color: #ffffff;
+  padding: 10px 25px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+.nav-menuIzquierdo a{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: auto;
+  background-color: #f0f2f5;
+
+}
+
+.nav-menuIzquierdo a{
+  
+  margin: 5px 12px;
+  text-decoration: none;
+  color: #1c1e21;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background 0.2s;
+  
+}
+
+.nav-menuIzquierdo a:hover {
+  background-color: #e6ede7;
+}
+
+
+
+/* ----------------------------------- */
+
+/* seccion de cuerpo de contenido (menu lateral izquierdo y contenido central) */
+
+#container{
+  
+  display: flex;
+  height: 100%;
+
+  
+  
+}
+  
+    
+.cuerpoCompleto{
+    
     font-family: Arial, Helvetica, sans-serif;
     overflow: hidden;
-    background-color: #e6ede7;
+    background-color: #e5e7eb;
+    height: 100vh;
 
+
+}
+
+
+
+/* ----------------------------------- */
+/* estilo seccion de contenido central. */
+body{
+
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  box-sizing: border-box; 
+  
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 
 }
 
@@ -13,24 +172,31 @@ body{
 button{
     font-family: Arial, Helvetica, sans-serif;
     border: none;
-    font-size: 22PX;
+    border-radius: 10px;
+    font-size: 22px;
     padding: 8px 16px;
     width: 440px;
     color: white;
-    background-color: #6ccb75;
+    background-color: #5eab5b;
     cursor: pointer;
 
 
 }
 
+button:hover {
+
+    background-color: #4b9448;
+}
+
 .contenedor{
     width: 450px;
-    /* border: 2px solid black; */
+    border: 2px solid #e5e7eb;
+    border-radius: 10px;
     padding: 50px;
     margin: 50px;
     box-shadow: 2px 4px 16px rgba(0, 0, 0, .2);
 
-    background-color: #e6ede7;
+    background-color: #ffffff;
     
     
     /* cajas flex */
@@ -42,6 +208,7 @@ button{
 
    
 }
+
 
 #gh{
     color: black;
@@ -55,8 +222,11 @@ button{
     justify-content: center;
     gap: 16px;
     padding: 50px;
-    margin: 50px;
-    
+    margin: 0px;
+
+    width: auto;
+    overflow-y: auto;
+
 
 
 }

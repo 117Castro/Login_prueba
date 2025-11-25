@@ -10,34 +10,44 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     /* overflow: hidden; */
 
-    background-color: #6ccb75;
+    background-color: #f6f6f7;
 
 
 }
 
 input{
     border: 1px solid #ddd;
+    border-radius: 5px;
     padding: 8px 16px;
     width: 400px;
+
+    /* visualisar en minusculas el nombre del usuario */
+    text-transform: lowercase;
+
 }
 
 button, .btn_atras{
     font-family: Arial, Helvetica, sans-serif;
     border: none;
+    border-radius: 10px;
+
     /* border-color: #6ccb75; */
-    border: 2px solid #6ccb75;
+    border: 2px solid #5eab5b;
     background-color: #ffffffb7;
     padding: 8px 16px;
     width: 440px;
-    color: #6ccb75;
+    color: #5eab5b;
     font-size: 22px;
     cursor: pointer;
+
 }
+
 
 button{
     font-family: Arial, Helvetica, sans-serif;
     border: none;
-    background-color: #6ccb75;
+    border-radius: 10px;
+    background-color: #5eab5b;
     padding: 8px 16px;
     width: 440px;
     color: white;
@@ -45,26 +55,53 @@ button{
     cursor: pointer;
 }
 
+button:hover {
+
+    background-color: #4b9448;
+}
+
+.btn_atras:hover {
+
+    background-color: #f0f2f5;
+}
+
 
 
 
 .contenedor{
-     width: 450px;
-     /* border: 2px solid black; */
-     padding: 50px;
-     margin: 50px;
-     box-shadow: 2px 4px 16px rgba(0, 0, 0, .2); 
+    width: 450px;
+    border: 2px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 50px;
+    margin: 50px;
+    box-shadow: 2px 4px 16px rgba(0, 0, 0, .2); 
 
-     /* cajas flex */
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-self: center;
-     gap: 10px;
-     background-color: #e6ede7;
-
+    /* cajas flex */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    gap: 10px;
+    background-color: #ffffff;
+    
     
 }
+
+
+.contenedor .titulo_login{
+
+    text-align: center;
+    gap: 8px;
+
+}
+
+
+.titulo_login h1{
+    color: #44864b;
+}
+
+
+
 
 .container{
     flex: 1;
@@ -73,8 +110,8 @@ button{
     align-items: center;
     justify-content: center;
     gap: 16px;
-    padding: 50px;
-    margin: 50px;
+    /* padding: 50px;
+    margin: 50px; */
 
 }
 

@@ -1,0 +1,18 @@
+Elemento	Color sugerido	Hexadecimal	Descripción
+Fondo principal (body)	Gris claro suave    #f6f6f7	Color de fondo general del sitio
+
+Fondo secciones (tarjetas, etc.)	Blanco  #ffffff	Para contenedores o tarjetas
+
+Texto principal	Gris oscuro casi negro	#1c1e21	Ideal para títulos y texto legible
+
+Texto secundario / descripciones	Gris medio	#6b7280	Para detalles menores o textos secundarios
+
+Color primario (botones, enlaces)	Verde esmeralda Shopify	#5eab5b	Para botones importantes, acentos y enlaces destacados
+
+Hover del botón primario	Verde oscuro	#4b9448	Cuando pasas el mouse sobre botones primarios
+
+Color de navbar / sidebar fondo	Blanco	#ffffff	Para que se vea limpio y elegante
+
+Bordes / líneas divisorias	Gris claro	#e5e7eb	Líneas suaves, poco invasivas
+
+Fondo de hover en enlaces	Gris muy claro	#f0f2f5	Para resaltar enlaces o ítems del menú

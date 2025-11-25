@@ -1,4 +1,3 @@
-
 /* *{
     border: 2px solid red;
 } */
@@ -10,13 +9,15 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     /* overflow: hidden; */
 
-    background-color: #6ccb75;
+    background-color: #f6f6f7;
+    
 
 
 }
 
 input{
     border: 1px solid #ddd;
+    border-radius: 5px;
     padding: 8px 16px;
     width: 400px;
 }
@@ -24,7 +25,8 @@ input{
 button{
     font-family: Arial, Helvetica, sans-serif;
     border: none;
-    background-color: #6ccb75;
+    border-radius: 10px;    
+    background-color: #5eab5b;
     padding: 8px 16px;
     width: 440px;
     color: white;
@@ -32,9 +34,15 @@ button{
     cursor: pointer;
 }
 
+button:hover {
+
+    background-color: #4b9448;
+}
+
 .contenedor{
      width: 450px;
-     /* border: 2px solid black; */
+     border: 2px solid #e5e7eb;
+     border-radius: 10px;
      padding: 50px;
      margin: 50px;
      box-shadow: 2px 4px 16px rgba(0, 0, 0, .2); 
@@ -45,10 +53,26 @@ button{
      align-items: center;
      justify-self: center;
      gap: 10px;
-     background-color: #e6ede7;
+     background-color: #ffffff;
+
+     
 
     
 }
+
+.contenedor .titulo_login{
+
+    text-align: center;
+    gap: 8px;
+
+}
+
+
+.titulo_login h1{
+    color: #44864b;
+}
+
+
 
 .content{
     flex: 1;

@@ -5,6 +5,15 @@ document.getElementById("user_name").addEventListener("keypress", edadUsuario);
 
 function edadUsuario(event){
     if(event.keyCode == 13){
+    document.getElementById("user_alias").focus();
+    }
+}
+
+
+document.getElementById("user_alias").addEventListener("keypress", nameuser);
+
+function nameuser(event){
+    if(event.keyCode == 13){
     document.getElementById("user_age").focus();
     }
 }
@@ -22,8 +31,8 @@ function correoUsuario (event){
 document.getElementById("user_correo").addEventListener("keypress", contraceñaUsuario);
 
 function contraceñaUsuario (event){
-    
-    if (event.keyCode == 13) {
+
+   if (event.keyCode == 13 ) {
         document.getElementById("password").focus();
         
       
@@ -39,7 +48,7 @@ document.getElementById("password").addEventListener("keypress", InputUsuario);
 function InputUsuario (event){
     
     if (event.keyCode == 13) {
-        continuarLogin();
+        inscribir();
       
        
     }
@@ -47,30 +56,31 @@ function InputUsuario (event){
 
 
 
-function continuarLogin(){
+//funcion para evitar inputs bacios
+// function continuarLogin(){
 
-    let usuario = document.getElementById("user_name").value;
-    let edad = document.getElementById("user_age").value;
-    let correo = document.getElementById("user_correo").value;
-    let contraceña = document.getElementById("password").value; 
+//     let usuario = document.getElementById("user_name").value;
+//     let edad = document.getElementById("user_age").value;
+//     let correo = document.getElementById("user_correo").value;
+//     let contraceña = document.getElementById("password").value; 
     
-    if ( usuario == ""){
-        document.getElementById("mensajeError").textContent = "Debe colocar un nombre de usuario";
-        modal.showModal();
+//     if ( usuario == ""){
+//         document.getElementById("mensajeError").textContent = "Debe colocar un nombre de usuario";
+//         modal.showModal();
 
         
-    } else if (correo == "" || contraceña == "") {
+//     } else if (correo == "" || contraceña == "") {
         
-        document.getElementById("mensajeError").textContent = "Debe colocar un correo y contraceña";
-        document.getElementById("password").value = "";
-        modal.showModal();
+//         document.getElementById("mensajeError").textContent = "Debe colocar un correo y contraceña";
+//         document.getElementById("password").value = "";
+//         modal.showModal();
         
 
-    }else{
-        window.location="login.html";
-    }
+//     }else{
+//         window.location="login.html";
+//     }
     
-}
+// }
 
 
 
@@ -89,6 +99,17 @@ function closemodal(){
     modal.close();
 
 }
+
+
+// funcion de validacion de correo
+
+function validaEmail(email) {
+  const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  return regex.test(email);
+
+}
+
+
 
 
 
