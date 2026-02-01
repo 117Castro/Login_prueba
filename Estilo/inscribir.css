@@ -32,11 +32,11 @@ button, .btn_atras{
     border-radius: 10px;
 
     /* border-color: #6ccb75; */
-    border: 2px solid #5eab5b;
+    border: 2px solid #162F65;
     background-color: #ffffffb7;
     padding: 8px 16px;
     width: 440px;
-    color: #5eab5b;
+    color: #162F65;
     font-size: 22px;
     cursor: pointer;
 
@@ -47,7 +47,7 @@ button{
     font-family: Arial, Helvetica, sans-serif;
     border: none;
     border-radius: 10px;
-    background-color: #5eab5b;
+    background-color: #3361AC;
     padding: 8px 16px;
     width: 440px;
     color: white;
@@ -57,7 +57,7 @@ button{
 
 button:hover {
 
-    background-color: #4b9448;
+    background-color: #162F65;
 }
 
 .btn_atras:hover {
@@ -97,7 +97,7 @@ button:hover {
 
 
 .titulo_login h1{
-    color: #44864b;
+    color: #E8AF30;
 }
 
 
@@ -122,7 +122,7 @@ a{
 }
 
 .enlace{
-    color: #44864b;
+    color: #3361AC;
 
 }
 

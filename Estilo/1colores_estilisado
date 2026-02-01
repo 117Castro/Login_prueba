@@ -7,9 +7,15 @@ Texto principal	Gris oscuro casi negro	#1c1e21	Ideal para títulos y texto legib
 
 Texto secundario / descripciones	Gris medio	#6b7280	Para detalles menores o textos secundarios
 
-Color primario (botones, enlaces)	Verde esmeralda Shopify	#5eab5b	Para botones importantes, acentos y enlaces destacados
+Color de titulos y textox primarios #E8AF30 utilizado para titulo de inportancia de pagina
 
-Hover del botón primario	Verde oscuro	#4b9448	Cuando pasas el mouse sobre botones primarios
+Color primario (botones, enlaces)	naranja	#3361AC	Para botones importantes, acentos y enlaces destacados
+
+Hover del botón primario	azul oscuro	#162F65	Cuando pasas el mouse sobre botones primarios
+
+Botones de cierre o retroceso color rojo claro #CB5A44 como color principal
+
+Hover de botones de cierre o retroceso coral #FD7B4E 
 
 Color de navbar / sidebar fondo	Blanco	#ffffff	Para que se vea limpio y elegante
 

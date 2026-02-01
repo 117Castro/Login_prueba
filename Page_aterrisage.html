@@ -1,80 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cerrar secion</title>
-    <link rel="stylesheet" href="./Estilo/close.css">
-    <link rel="website icon" type="png" href="./Iconos/Screenshot 2024-12-14 213232.png"> 
-    
-    
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Home</title>
+
+  <link rel="stylesheet" href="./Estilo/page_aterrizage.css">
+  <link rel="icon" type="image/png" href="./Iconos/icon_logo.png">
 </head>
+
 <body>
-    
-<!-- menu superior -->
-    <head>
-        <nav class="navbar">
-            <div class="nav-left">
-                <div class="logo">Nombre de la empresa o logotipo</div>
-            </div>
-                
-            <div class="nav-center">
-                <a href="#">Feed</a>
-                <a href="#">Perfil</a>
-                <a href="#">Opciones</a>
-                <a href="#">Store</a>
-            </div>
-                
-            <div class="nav-right">
-                <input type="text" placeholder="Buscar...">
-            </div>
-        </nav>
-    </head>
 
-<!-- sencion principal -->
-    <section class="cuerpoCompleto">
+  <!-- HEADER / NAVBAR -->
+  <header>
+    <nav class="navbar">
 
-        <div id="container">
-    
-            <!-- menu lateral izquierdo -->
-            <nav class="navbarIzquierdo">
-                <div class="nav-menuIzquierdo">                
-                    <a href="">opcion uno con mas texto</a>
-                    <a href="">opcion dos</a>
-                    <a href="">opcion tres</a>
-                    <a href="">opcion 4</a>
-                   
-                </div>
-            </nav>
-            
-     
-            <!-- seccion de contenido de la pagina -->
-            <div class="content">
-                <div class="contenedor">
-                    <h1>Has iniciado sesion</h1>
-                    <button id="btn_closer" type="button" onclick="closer()">Cerrar sesion</button>
-                    
-                </div>
-               
-                
-            </div>
-            
-        </div>
+      <div class="nav-left">
+        <div class="logo">Nombre de la empresa o logotipo</div>
+      </div>
+
+      <div class="nav-center">
+        <a href="#">Feed</a>
+        <a href="#">Perfil</a>
+        <a href="#">Opciones</a>
+        <a href="#">Store</a>
+      </div>
+
+      <div class="nav-right">
+        <input type="text" placeholder="Buscar...">
+      </div>
+
+    </nav>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="cuerpoCompleto">
+
+    <section id="container">
+
+      <!-- tarjeta de ser necesaria para funcion a futuro. -->
+        <!-- <div class="contenedor">
+            <h1>Has iniciado sesión</h1>
+            <p>Prueba de texto para modificacion posterior</p>
+            <button id="btn_facturacion" class="btn_accion">Boton de accion</button>
+        </div> -->
+
+      <button id="btn_inventario" class="btn_accion"> 
+        Inventario
+      </button>
+
+      <button id="btn_Pedido" class="btn_accion"> 
+        Pedido
+      </button>
+
+      <button id="btn_cliente" class="btn_accion"> 
+        <br> Nuevo cliente
+      </button>
+
+      <button id="btn_usuario" class="btn_accion"> 
+        <br> Usuario
+      </button>
+
+
+
+
+
+
+
+
+<!-- modulos de visualizacin -->
+      <button class="btn_accion"> 
+        modulo
+      </button>
+      <button class="btn_accion"> 
+        modulo
+      </button>
+      <button class="btn_accion"> 
+        modulo
+      </button>
+      <button class="btn_accion"> 
+        modulo
+      </button>
+      <button class="btn_accion"> 
+        modulo
+      </button>
+<!-- ============================== -->
+
+
+        
     </section>
- 
-<!-- parte posterior -->
-    <!-- <footer>
-
-        <h2></h2>
-    </footer> -->
-
-
-
-
-
-
     
-    <script src="./Back/closer_seccion.js"></script>
+</main>
+
+
+
+    <div class="content">
+    
+        <p>Menu posterior</p>
+        <button id="btn_closer" class="btn_closer" type="button" onclick="closer()">
+          Cerrar sesión
+        </button>
+  
+        
+    
+    </div>
+
+  <!-- JS -->
+  <script src="./Back/page_aterrisage.js"></script>
+
 </body>
 </html>
